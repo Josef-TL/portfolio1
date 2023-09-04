@@ -20,6 +20,9 @@ body .wrapper{
     max-width: 1000px;
 }
 
+
+
+
 /*
 Header
  */
@@ -33,6 +36,15 @@ header .wrapper {
 }
 
 /* Her begynder Main*/
+
+@media screen and (max-width: 500px) {
+    main .myself .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 main .myself  {
     padding: 100px 12px 12px;
 }
@@ -43,7 +55,6 @@ main .myself .wrapper div {
 
 main .myself .wrapper{
     display: flex;
-    flex-direction: column;
 }
 
 /*******************************
@@ -80,8 +91,22 @@ main .job h3{
     margin: 12px auto ;
 }
 
+main .job .wrapper {
+    max-width: 500px;
+}
 main .job li .content{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+}
+
+main .job li .content p{
+    width: 50%;
+}
+
+main .job li .content p:last-of-type{
+    text-align: center;
 }
 
 /* Her starter footer */

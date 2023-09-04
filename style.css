@@ -1,0 +1,101 @@
+/* Top level shit */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    color: black;
+    font-size: 17px;
+    line-height: normal;
+    background-color: indianred;
+}
+
+body .wrapper{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/*
+Header
+ */
+header {
+    padding: 0 48px;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* Her begynder Main*/
+main .myself  {
+    padding: 100px 12px 12px;
+}
+
+main .myself .wrapper div {
+    padding: 6px;
+}
+
+main .myself .wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+/*******************************
+Her starter Education section
+********************************/
+
+main .education {
+    padding: 36px 12px 12px
+}
+
+.education .card {
+    margin: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.education .card img {
+    max-height: 160px;
+    width: auto;
+}
+
+.education .card .content {
+    background-color: #338746;
+}
+
+/*
+Job content
+ */
+
+main .job h3{
+    text-align: center;
+    margin: 12px auto ;
+}
+
+main .job li .content{
+    display: flex;
+}
+
+/* Her starter footer */
+
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+    border-top: solid;
+    border-color: darkgreen;
+    padding-top: 6px;
+}
+
+footer .content li {
+    padding: 2px;
+}

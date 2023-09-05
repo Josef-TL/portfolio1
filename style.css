@@ -1,7 +1,20 @@
+/*
+Color palette
+#244f1c
+#7c874a
+#d4b67d
+#761d47
+#ff8ba8
+
+ */
+
+
 /* Top level shit */
 * {
     margin: 0;
     padding: 0;
+    font-family: "Lato",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Droid Sans","Tahoma",sans-serif;
+
 }
 
 ul, ol {
@@ -47,6 +60,7 @@ header .wrapper {
 
 main .myself  {
     padding: 100px 12px 12px;
+
 }
 
 main .myself .wrapper div {
@@ -55,6 +69,7 @@ main .myself .wrapper div {
 
 main .myself .wrapper{
     display: flex;
+    max-width: 600px;
 }
 
 /*******************************
@@ -63,6 +78,15 @@ Her starter Education section
 
 main .education {
     padding: 36px 12px 12px
+}
+
+.education h2 {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-left: 24px;
+}
+.education .wrapper {
+    max-width: 600px;
 }
 
 .education .card {
@@ -91,8 +115,14 @@ main .job h3{
     margin: 12px auto ;
 }
 
+.job h2 {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-left: 24px;
+}
+
 main .job .wrapper {
-    max-width: 500px;
+    max-width: 600px;
 }
 main .job li .content{
     display: flex;
@@ -111,6 +141,9 @@ main .job li .content p:last-of-type{
 
 /* Her starter footer */
 
+footer .wrapper{
+    max-width: 600px;
+}
 
 footer .content {
     display: flex;

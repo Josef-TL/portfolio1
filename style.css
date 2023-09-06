@@ -10,6 +10,10 @@ Color palette
 
 
 /* Top level shit */
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,11 +45,31 @@ Header
  */
 header {
     padding: 0 48px;
+    background-color: #244f1c;
+    box-shadow: 0px 5px 5px black;
 }
 
 header .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+header .wrapper ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .wrapper li {
+    padding: 12px;
+}
+
+header .wrapper a{
+    text-decoration: none;
+    color: black;
+}
+header .wrapper li:hover{
+    text-decoration: none;
+    background-color: #338746;
 }
 
 /* Her begynder Main*/
@@ -70,6 +94,7 @@ main .myself .wrapper div {
 main .myself .wrapper{
     display: flex;
     max-width: 600px;
+    align-items: center;
 }
 
 /*******************************
@@ -132,11 +157,23 @@ main .job li .content{
 }
 
 main .job li .content p{
-    width: 50%;
+    width: 40%;
+    border-radius: 6px;
+    margin: 3px;
+    padding: 6px;
 }
+
+main .job li .content p:first-of-type{
+background-color: #914646}
 
 main .job li .content p:last-of-type{
     text-align: center;
+    background-color: #914646;
+}
+
+.job .card h3 {
+    background-color: #338746;
+    border-radius: 6px;
 }
 
 /* Her starter footer */
